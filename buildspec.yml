@@ -2,14 +2,12 @@ version: 0.2
 
 phases:
   pre_build:
-    commands:  
-      - echo logging in to Amazon ECR...
+    commands:
+      - echo 'pre build'
   build:
     commands:
-      - echo Build started on `date`
-  post_build:
-    commands:
-      - echo Build completed on `date`
-#artifacts:
-#    files: imagedefinitions.json
-
+      - echo 'python -m unittest discover -s my-api'
+artifacts:
+  files: 
+    - '**/*'
+  base-directory: flaks_on_elasticbeanstalk
