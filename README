@@ -1,5 +1,7 @@
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli-codebuild.html
 
 eb init -p python-3.7 flask-tutorial --region eu-west-3
 eb create flask-env
+eb deploy
 eb terminate
