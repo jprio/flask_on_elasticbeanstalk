@@ -10,4 +10,4 @@ phases:
 artifacts:
   files: 
     - '**/*'
-  base-directory: flask_on_elasticbeanstalk
+  base-directory: .
